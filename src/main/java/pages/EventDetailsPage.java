@@ -42,6 +42,4 @@ public class EventDetailsPage extends BasePage {
     public void openActualEvent() throws InterruptedException {
         clickFirstEvent();
     }
-
-
 }
