@@ -58,20 +58,6 @@ public class CreateUserLoginTests extends BasePage {
         assertTrue(countButtons() >= 1);
     }
 
-    public int countInputs() {
-        List<WebElement> inputs = driver.findElements(By.tagName("input"));
-        return inputs.size();
-    }
-
-    public int countButtons() {
-        List<WebElement> buttons = driver.findElements(By.tagName("button"));
-        return buttons.size();
-    }
-
-    public boolean hasValidationError() {
-        String p = driver.getPageSource().toLowerCase();
-        return p.contains("invalid") || p.contains("error") || p.contains("required");
-    }
 
     @After
     public void tearDown() {

@@ -170,6 +170,7 @@ public abstract class BasePage {
         return countElements(By.tagName("button"));
     }
 
+
     public void tearDown() {
         if (driver != null) {
             driver.quit();
